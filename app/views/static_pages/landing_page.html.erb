@@ -1,4 +1,10 @@
-<h1>Hello World</h1>
+<%= link_to root_path do %>
+  <i class="fa-solid fa-house"></i>
+  Home
+<% end %>
 <hr/>
 
-<%= link_to "Privacy Policy", privacy_policy_path %>
+<%= link_to privacy_policy_path do %>
+  <i class="fa-solid fa-file-lines"></i>
+  Privacy Policy
+<% end %>

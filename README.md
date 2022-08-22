@@ -1,25 +1,64 @@
-# README
+<center><img src="https://user-images.githubusercontent.com/22925257/185037955-a9ef2326-d200-4605-a250-6f063818b171.png" width="300" height="150" align="center"></center>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# App's name
 
-Things you may want to cover:
+> by AC Alexandre Calaça
 
-* Ruby version
+<br/>
 
-* System dependencies
+Description: 
 
-* Configuration
+Live view: Not avaibable.
 
-* Database creation
+___
 
-* Database initialization
+## Technologies used
+Ruby gems
+| Header	|  Header	|  Header	| Header 	| Header  	|
+| :-----:	|:---:	| :---:	| :---:	| :---:	|
+|  Rails	| webpacker 	| simple_form 	|  faker	|  action_text	|
+|  	|  	|  	|  	|  	|
+|  	|  	|  	|  	|  	|
 
-* How to run the test suite
+JS dependencies and other libraries
+```
+Fontawesome and bootstrap
+```
+ ___
+ 
 
-* Services (job queues, cache servers, search engines, etc.)
+## Features
+-
+-
 
-* Deployment instructions
+___
 
-* ...
-# udemy-clone
+## Setup
+### Requirements
+- Ruby 2.7.3
+- Rails 6.1.6.1
+- Node 16.16.0
+- Postgresql Databse
+
+
+### Usage
+1. Create the database
+> rails db:create
+
+2. Perform migrations
+> rails db:migrate
+
+3. Install gems and dependencies
+> bundle install
+> yarn install
+
+4. Populate the database
+> rails db:seed
+
+___
+
+
+## License
+
+It's available under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+

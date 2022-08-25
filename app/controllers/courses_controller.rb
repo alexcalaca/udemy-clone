@@ -2,7 +2,11 @@ class CoursesController < ApplicationController
   before_action :set_course, only: %i[ show edit update destroy ]
 
   def index
-    @courses = Course.all
+    if params[:title]
+      @courses = Course.where('title ILIKE ?', "%#{params[:title]}%")
+    else
+      @courses = Course.all
+    end
   end
 
   def show

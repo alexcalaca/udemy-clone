@@ -17,7 +17,7 @@ Ruby gems
 | Header	|  Header	|  Header	| Header 	| Header  	|
 | :-----:	|:---:	| :---:	| :---:	| :---:	|
 |  Rails	| webpacker 	| simple_form 	|  faker	|  action_text	|
-|  devise	|  	|  	|  	|  	|
+|  devise	| friendly_id 	|  	|  	|  	|
 |  	|  	|  	|  	|  	|
 
 JS dependencies and other libraries

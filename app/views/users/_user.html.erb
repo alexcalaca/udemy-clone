@@ -28,4 +28,12 @@
     <%= 'last_sign_in_ip'.humanize %>
     <%= user.last_sign_in_ip %>    
   </div>
+  <div class="card-footer">
+  Confirmed email?
+    <% if user.confirmed_at.present? %>
+      <div class="fa fa-square-check">Yes</div>
+    <% else %>
+      <div class="fa fa-ban">No</div>
+    <% end %>
+  </div>
 </div>

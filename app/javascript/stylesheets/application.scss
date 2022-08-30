@@ -1,3 +1,12 @@
 @import "bootstrap";
 
-body { background-color: lightblue; } 
+body { background-color: lightblue; };
+
+#table1 {
+	@extend .table, .table-hover,
+					.table-responsive-xl, .table-bordered,
+					.table-sm, .bg-white
+}
+
+.form-control.is-invalid{ background-image: none; }
+.form-control.is-valid{ background-image: none; }

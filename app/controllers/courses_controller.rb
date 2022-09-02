@@ -1,12 +1,11 @@
 class CoursesController < ApplicationController
   before_action :set_course, only: %i[ show edit update destroy ]
 
-  def index
-    if params[:title]
-      @courses = Course.where('title ILIKE ?', "%#{params[:title]}%")
-    else
-      @courses = Course.all
-    end
+  def index        
+    @ransack_courses = Course.ransack(
+      params[:courses_search], search_key: :courses_search)
+      
+    @courses = @ransack_courses.result.includes(:user)
   end
 
   def show

@@ -1,4 +1,7 @@
-class Course < ApplicationRecord
+class Course < ApplicationRecord  
+  include PublicActivity::Model
+  tracked
+  
   validates :title, :short_description,
             :language, :price,
             :level, presence: true

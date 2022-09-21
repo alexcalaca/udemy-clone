@@ -30,13 +30,7 @@
             <div class="fa fa-users"></div>
             Users
           <% end %>
-        </li>
-        <li class="<%= 'active font-weight-bold' if current_page?(home_activity_path) %> nav-item">
-          <%= link_to home_activity_path, class: 'nav-link' do %>
-            <div class="fa fa-bell"></div>
-            Activities
-          <% end %>
-        </li>
+        </li>        
       </ul>
 
       <%= search_form_for @ransack_courses, as: :courses_search, url: courses_path do |f| %>
@@ -52,12 +46,14 @@
 
       
       <ul class="navbar-nav mr-right">
-        <li class="<%= 'active font-weight-bold' if current_page?(root_path) %> nav-item">
-          <%= link_to root_path, class: 'nav-link' do %>
-            <div class="fa fa-home"></div>
-            Another link
-          <% end %>
+        <li class="<%= 'active font-weight-bold' if current_page?(home_activity_path) %> nav-item">
+            <%= link_to home_activity_path, class: 'nav-link' do %>
+              <div class="fa fa-bell"></div>
+              Activity
+            <% end %>
         </li>
+      
+        
         <li class="nav-item dropdown">
           <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown" role="button">
             <b>

@@ -1,4 +1,7 @@
-class Course < ApplicationRecord
+class Course < ApplicationRecord  
+  include PublicActivity::Model
+  tracked owner: Proc.new{ |controller, model| controller.current_user }
+
   validates :title, :short_description,
             :language, :price,
             :level, presence: true

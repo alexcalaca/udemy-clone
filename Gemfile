@@ -18,6 +18,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'friendly_id', '~> 5.2.4'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'ransack'
+gem 'public_activity'
 
 
 group :development, :test do  

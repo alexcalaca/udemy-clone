@@ -3,8 +3,7 @@ Rails.application.routes.draw do
   resources :courses
   resources :users, only: [:index]
 
-  get 'home/index'
   get 'home/activity'
-  get "privacy_policy", to: 'static_pages#privacy_policy'    
-  root "static_pages#landing_page"
+  get "privacy_policy", to: 'static_pages#privacy_policy'
+  get 'home/index'  
 end

@@ -20,6 +20,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'ransack'
 gem 'public_activity'
 gem 'rolify'
+gem 'pundit'
 
 
 group :development, :test do  

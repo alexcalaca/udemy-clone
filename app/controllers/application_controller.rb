@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
   include Pundit
   protect_from_forgery
 
+  rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
+
   before_action :authenticate_user!
 
   before_action :set_global_variables, if: :user_signed_in?

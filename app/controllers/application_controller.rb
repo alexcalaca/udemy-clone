@@ -1,6 +1,9 @@
 class ApplicationController < ActionController::Base
   include PublicActivity::StoreController
   
+  include Pundit
+  protect_from_forgery
+
   before_action :authenticate_user!
 
   before_action :set_global_variables, if: :user_signed_in?

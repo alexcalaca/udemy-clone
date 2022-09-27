@@ -35,19 +35,17 @@ class ApplicationPolicy
   def destroy?
     false
   end
-
+  
   class Scope
+    attr_reader :user, :scope
+
     def initialize(user, scope)
       @user = user
       @scope = scope
     end
 
     def resolve
-      raise NotImplementedError, "You must define #resolve in #{self.class}"
+      scope.all
     end
-
-    private
-
-    attr_reader :user, :scope
   end
 end

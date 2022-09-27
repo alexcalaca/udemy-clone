@@ -12,6 +12,7 @@ class UsersController < ApplicationController
 	end
 
 	def update
+		authorize @user
 		if @user.update(user_params)
 			redirect_to users_path, notice: 'User roles were successfully updated'
 		else

@@ -13,13 +13,16 @@ class CoursesController < ApplicationController
 
   def new
     @course = Course.new
+    authorize @course    
   end
 
   def edit
+    authorize @course, :edit?
   end
 
   def create
     @course = Course.new(course_params)
+    authorize @course
     @course.user = current_user
 
     respond_to do |format|
@@ -34,6 +37,7 @@ class CoursesController < ApplicationController
   end
 
   def update
+    authorize @course, :update?
     respond_to do |format|
       if @course.update(course_params)
         format.html { redirect_to course_url(@course), notice: "Course was successfully updated." }
@@ -46,7 +50,8 @@ class CoursesController < ApplicationController
   end
 
   def destroy
-    @course.destroy
+    authorize @course
+    @course.destroy    
 
     respond_to do |format|
       format.html { redirect_to courses_url, notice: "Course was successfully destroyed." }

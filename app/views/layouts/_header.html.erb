@@ -75,6 +75,16 @@
             
           </div>
         </li>
+
+
+        <li class="<%= 'active font-weight-bold' if current_page?(courses_path) %> nav-item">
+          <%= link_to destroy_user_session_path, :method => :delete, class: 'nav-link' do %>
+            <div class="fa fa-graduation-cap"></div>
+            Temp logout
+          <% end %>
+        </li>
+
+
       </ul>
     <% else %>
       <ul class="navbar-nav mr-auto"></ul>

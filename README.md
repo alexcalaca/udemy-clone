@@ -1,14 +1,14 @@
-<center><img src="https://user-images.githubusercontent.com/22925257/185037955-a9ef2326-d200-4605-a250-6f063818b171.png" width="300" height="150" align="center"></center>
+<center><img src="https://user-images.githubusercontent.com/22925257/198814121-4684fafc-a965-4768-99ce-5055991f5e3f.png" width="300" height="150" align="center"></center>
 
-# App's name
+# Project Euler's solutions using Ruby
 
 > by AC Alexandre Calaça
 
 <br/>
 
-Description: 
+Description: Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient methods, the use of a computer and programming skills will be required to solve most problems.
 
-Live view: Not avaibable.
+Link: https://projecteuler.net/about.
 
 ___
 
@@ -20,26 +20,20 @@ Ruby gems
 |  devise	| friendly_id 	|  	|  	|  	|
 |  	|  	|  	|  	|  	|
 
-JS dependencies and other libraries
-```
-Fontawesome and bootstrap
-```
+
  ___
  
 
 ## Features
-- Track created or changed records and display in a view page;
+- Feature 1;
 -
 
 ___
 
 ## Setup
 ### Requirements
-- Ruby 2.7.3
-- Rails 6.1.6.1
-- Node 16.16.0
-- Postgresql Databse
-
+- Requirement 1;
+- Requirement 2;
 
 ### Usage
 1. Create the database
